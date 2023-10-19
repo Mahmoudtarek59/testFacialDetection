@@ -59,8 +59,8 @@ class _FaceDetectorViewState extends State<FaceDetectorView> {
           top: MediaQuery.sizeOf(context).height * 0.15,
           start: MediaQuery.sizeOf(context).width * 0.15,
           child: Icon(
-            leftIsOpen ? Icons.check : Icons.close,
-            color: leftIsOpen ? Colors.green : Colors.red,
+            rightIsOpen ? Icons.check : Icons.close,
+            color: rightIsOpen ? Colors.green : Colors.red,
             size: 35,
           ),
         ),
@@ -68,8 +68,8 @@ class _FaceDetectorViewState extends State<FaceDetectorView> {
           top: MediaQuery.sizeOf(context).height * 0.15,
           end: MediaQuery.sizeOf(context).width * 0.15,
           child: Icon(
-            rightIsOpen ? Icons.check : Icons.close,
-            color: rightIsOpen ? Colors.green : Colors.red,
+            leftIsOpen ? Icons.check : Icons.close,
+            color: leftIsOpen ? Colors.green : Colors.red,
             size: 35,
           ),
         )
